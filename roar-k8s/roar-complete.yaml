@@ -4,7 +4,6 @@ metadata:
   labels:
     app: roar-web
   name: roar-web
-  namespace: roar
 spec:
   replicas: 1
   selector:
@@ -37,7 +36,6 @@ metadata:
   labels:
     app: roar-web
   name: roar-web
-  namespace: roar
 spec:
   ports:
   - name: frontend
@@ -53,7 +51,6 @@ metadata:
   labels:
     app: roar-db
   name: mysql
-  namespace: roar
 spec:
   replicas: 0
   selector:
@@ -102,7 +99,6 @@ metadata:
   labels:
     app: roar-db
   name: mysql
-  namespace: roar
 spec:
   ports:
   - name: mysql
